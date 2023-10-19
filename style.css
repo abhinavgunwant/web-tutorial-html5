@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#entry-row {
+    padding-bottom: 1rem;
+}
+
+#entry-row input {
+    font-size: 1.1rem;
+    width: calc(100vw - 3rem);
+    padding: 0.25rem;
+}
+
+#entry-row button {
+    font-size: 1.1rem;
+    width: 2rem;
+    padding: 0.25rem;
+    background: #4444ff;
+    color: #ffffff;
+}
+
+h1 {
+    margin: 0.5rem 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+main .todo-items div {
+    padding: 1rem;
+}
+
+main .todo-items div:nth-child(odd) {
+    background-color: #ddddff
+}
+
+main .done-items {
+    border-top: 1px solid #000000;
+}
+
+main .done-items div label {
+    color: #555555;
+    text-decoration: line-through;
+}
+
+main .done-items div:nth-child(odd) {
+    background-color: #dddddd
+}
+
+main .done-items div {
+    padding: 1rem;
+}
+
+@media (max-width: 480px) {
+    main {
+        width: 100vw;
+    }
+}
+
